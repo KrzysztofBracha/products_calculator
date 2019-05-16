@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator proszków</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="product">
+      <h1>Fantomalt 400 g</h1>
+      <form>
+        <select id="fantomalt_kcal">
+        </select> [kcal]
+        <button id="submit_fantomalt">Przelicz</button>
+      </form>
+      <div id="description_fantomalt" class="description"></div>
+      <div class="results">
+        <div><span class="name">Miarki:</span><span id="fantomalt_scoops"></span></div>
+        <div><span class="name">Gramy:</span><span id="fantomalt_grams"></span></div>
+        <div><span class="name">Dni:</span><span id="fantomalt_days"></span></div>
+      </div>
+    </div>
+    <div class="product">
+      <h1>Protifar 225 g</h1>
+      <form>
+        <select id="protifar_protein">
+        </select> [g] białka
+        <button id="submit_protifar">Przelicz</button>
+      </form>
+      <div id="description_protifar" class="description"></div>
+      <div class="results">
+        <div><span class="name">Miarki:</span><span id="protifar_scoops"></span></div>
+        <div><span class="name">Gramy:</span><span id="protifar_grams"></span></div>
+        <div><span class="name">Dni:</span><span id="protifar_days"></span></div>
+      </div>
+    </div>
+    <div class="product">
+      <h1>Bebilon Nutrition 135 g</h1>
+      <form>
+        <select id="bebilon_ml">
+        </select> [ml] diety
+        <button id="submit_bebilon">Przelicz</button>
+      </form>
+      <div id="description_bebilon" class="description"></div>
+      <div class="results">
+        <div><span class="name">Miarki:</span><span id="bebilon_scoops"></span></div>
+        <div><span class="name">Gramy:</span><span id="bebilon_grams"></span></div>
+        <div><span class="name">Dni:</span><span id="bebilon_days"></span></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

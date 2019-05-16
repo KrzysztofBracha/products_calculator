@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #222;
+  }
+
+  div {
+    margin-bottom: 5px;
+
+    &.product {
+      border: 2px solid white;
+      padding: 20px;
+      width: 33%;
+      float: left;
+
+      div.results {
+        div {
+          color: white;
+          padding: 7px;
+
+          &:nth-child(1) {
+            background-color: royalblue;
+          }
+
+          &:nth-child(2) {
+            background-color: dodgerblue;
+          }
+        
+          &:nth-child(3) {
+            background-color: royalblue;
+          }
+        }
+        span.name {
+          display: inline-block;
+          width: 75px;
+        }
+      }
+
+      h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      form {
+        button {
+          width: 100px;
+          line-height: 30px;
+          letter-spacing: 1.6px;
+          display: block;
+          margin: 10px 0;
+          text-transform: uppercase;
+          cursor: pointer;
+          background-color: royalblue;
+          border-color: dodgerblue;
+          color: white;
+          font-weight: bold;
+
+          &:active {
+            outline: none;
+            }
+          &:focus {
+            outline: 0;
+          }
+        }
+
+        select {
+          width: 80px;
+          height: 20px;
+          line-height: 20px;
+          margin-right: 5px;
+
+          &:active {
+            outline: none;
+            }
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+
+    &.description {
+      font-size: 15px;
+      min-height: 40px;
+      line-height: 20px;
+      margin: 10px 0;
+    }
+  }
+
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 17px;
+    }
+
+    body {
+      font-size: 15px;
+    }
+
+    div.product form button {
+      width: 90px;
+      line-height: 25px;
+      font-weight: normal;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 14px;
+    }
+
+    body {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 17px;
+    }
+
+    body {
+      font-size: 15px;
+    }
+
+    div.product {
+      width: 100%;
+    }
+  }

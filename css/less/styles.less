@@ -1,3 +1,7 @@
+@first-main-color: royalblue;
+@second-main-color: dodgerblue; 
+@font-color: white;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,45 +12,51 @@
     padding: 30px;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    color: white;
+    color: @font-color;
     background-color: #222;
   }
 
-  div {
+  main {
     margin-bottom: 5px;
+    display: flex;
 
-    &.product {
-      border: 2px solid white;
+    section.product {
+      border: 2px solid @font-color;
       padding: 20px;
       width: 33%;
-      float: left;
 
-      div.results {
+      article.results {
         div {
-          color: white;
+          color: @font-color;
           padding: 7px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          
 
           &:nth-child(1) {
-            background-color: royalblue;
+            background-color: @first-main-color;
           }
 
           &:nth-child(2) {
-            background-color: dodgerblue;
+            background-color: @second-main-color;
           }
         
           &:nth-child(3) {
-            background-color: royalblue;
+            background-color: @first-main-color;
           }
         }
         span.name {
           display: inline-block;
-          width: 75px;
+          width: 72px;
+          letter-spacing: 1px;
+          font-size: 16px;
         }
       }
 
       h1 {
         font-size: 20px;
         margin-bottom: 10px;
+        display: block;
       }
 
       form {
@@ -58,9 +68,9 @@
           margin: 10px 0;
           text-transform: uppercase;
           cursor: pointer;
-          background-color: royalblue;
-          border-color: dodgerblue;
-          color: white;
+          background-color: @first-main-color;
+          border-color: @second-main-color;
+          color: @font-color;
           font-weight: bold;
 
           &:active {
@@ -87,7 +97,7 @@
       }
     }
 
-    &.description {
+    header.description {
       font-size: 15px;
       min-height: 40px;
       line-height: 20px;
@@ -100,15 +110,21 @@
     h1 {
       font-size: 17px;
     }
-
+  
     body {
       font-size: 15px;
     }
 
-    div.product form button {
+    section.product form button {
       width: 90px;
       line-height: 25px;
       font-weight: normal;
+    }
+  }
+
+  @media (max-width: 850px) {
+    h1 {
+      height: 55px;
     }
   }
 
@@ -120,18 +136,21 @@
     body {
       font-size: 13px;
     }
+
+    main {
+      flex-direction: column;
+    }
+    main section.product {
+      width: 100%;
+    }
   }
 
   @media (max-width: 640px) {
-    h1 {
-      font-size: 17px;
-    }
-
     body {
       font-size: 15px;
     }
 
-    div.product {
+    section.product {
       width: 100%;
     }
   }

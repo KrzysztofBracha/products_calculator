@@ -12,40 +12,35 @@ body {
 }
 main {
   margin-bottom: 5px;
-  display: flex;
 }
-main section.product {
+main .product {
   border: 2px solid white;
   padding: 20px;
   width: 33%;
+  float: left;
 }
-main section.product article.results div {
+main .product .results div {
   color: white;
   padding: 7px;
-  margin-bottom: 10px;
-  font-weight: bold;
 }
-main section.product article.results div:nth-child(1) {
+main .product .results div:nth-child(1) {
   background-color: royalblue;
 }
-main section.product article.results div:nth-child(2) {
+main .product .results div:nth-child(2) {
   background-color: dodgerblue;
 }
-main section.product article.results div:nth-child(3) {
+main .product .results div:nth-child(3) {
   background-color: royalblue;
 }
-main section.product article.results span.name {
+main .product .results span.name {
   display: inline-block;
-  width: 72px;
-  letter-spacing: 1px;
-  font-size: 16px;
+  width: 75px;
 }
-main section.product h1 {
+main .product h1 {
   font-size: 20px;
   margin-bottom: 10px;
-  display: block;
 }
-main section.product form button {
+main .product form button {
   width: 100px;
   line-height: 30px;
   letter-spacing: 1.6px;
@@ -58,25 +53,25 @@ main section.product form button {
   color: white;
   font-weight: bold;
 }
-main section.product form button:active {
+main .product form button:active {
   outline: none;
 }
-main section.product form button:focus {
+main .product form button:focus {
   outline: 0;
 }
-main section.product form select {
+main .product form select {
   width: 80px;
   height: 20px;
   line-height: 20px;
   margin-right: 5px;
 }
-main section.product form select:active {
+main .product form select:active {
   outline: none;
 }
-main section.product form select:focus {
+main .product form select:focus {
   outline: 0;
 }
-main header.description {
+main.description {
   font-size: 15px;
   min-height: 40px;
   line-height: 20px;
@@ -95,11 +90,6 @@ main header.description {
     font-weight: normal;
   }
 }
-@media (max-width: 850px) {
-  h1 {
-    height: 55px;
-  }
-}
 @media (max-width: 768px) {
   h1 {
     font-size: 14px;
@@ -107,14 +97,11 @@ main header.description {
   body {
     font-size: 13px;
   }
-  main {
-    flex-direction: column;
-  }
-  main section.product {
-    width: 100%;
-  }
 }
 @media (max-width: 640px) {
+  h1 {
+    font-size: 17px;
+  }
   body {
     font-size: 15px;
   }
